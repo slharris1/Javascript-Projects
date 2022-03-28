@@ -14,7 +14,7 @@ var Family="The Baileys", Dad="Sedrick", Mom="Shalena", Son="Rico"; //assigning 
 document.write(Son); //Calling the son variable
 document.write(3+3); //funtion of 3+3
 var str="This is a green color!"; 
-var result= str.fontcolor("green"); //attempt to establish green color font using fontcolor method
+//var result= str.fontcolor("green"); //attempt to establish green color font using fontcolor method
 let text="This is a green color!";
-let result= text.fontcolor("green"); //attempt to establish green color font using fontcolor method
-String.fontcolor("green"); //attempt to establish green color
+let result= text.fontcolor("green");
+document.write(result);  //string font color green
