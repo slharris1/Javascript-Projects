@@ -50,9 +50,10 @@ document.write(A);
 var C= 8000;
 document.write("<br>" + C);
 
-function my_Function(name) {
-    return "Hello" + name;
-    document.getElementById("demo").innerHTML= my_Function("Shalena");
+document.getElementById("demo").innerHTML = myFunction("Shalena");
+
+function myFunction(name) {
+  return "Hello " + name;
 }
 
 let animal = {
@@ -61,7 +62,7 @@ let animal = {
     Color: "white",
     disposition: "energetic",
     description: function() {
-        return "Rico is a " + this.Age + " year old " + this.disposition + ", " + this.Color + this.Breed;
+        return "Rico is a " + this.Age + " year old " + this.disposition + ", " + this.Color + " " +this.Breed;
     }
 };
 document.getElementById("animal").innerHTML= animal.description();
