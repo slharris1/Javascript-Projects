@@ -35,7 +35,7 @@ function placeXOrO(squareNumber) {
 
 
         //This function plays placement sound. 
-        audio('./Media/slap.mp3');
+        audio('./Media/place.mp3');
         //This condition checks to see if it is computers turn. 
         if (activePlayer === "O") {
             //This function disables clicking for the computer choice.
@@ -193,7 +193,7 @@ function drawWinLine (coordX1, coordY1, coordX2, coordY2) {
             if (y>y2) {y-= 10; }
             if (x >= x2 && y <= y2) {cancelAnimationFrame(animationLoop); }
         }
-
+    }
         //This function clears our canvas aftr our win line is drawn
         function clear() {
         //This line starts our animation loop.
@@ -227,4 +227,3 @@ function drawWinLine (coordX1, coordY1, coordX2, coordY2) {
         selectedSquares = [];
     }
 
-}
